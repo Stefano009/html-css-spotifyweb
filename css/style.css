@@ -7,6 +7,7 @@
 body {
     width: 100vW;
     height: 100vh;
+    font-family: sans-serif;
 }
 main {
     width: 100%;
@@ -53,6 +54,9 @@ footer {
 .logo>img{
     width: 150px;
 }
+#small-logo {
+    display: none;
+}
 .nav-link{
     height: 150px;
 
@@ -64,7 +68,7 @@ footer {
     list-style: none;
 
 }
-.user-link>li>a {
+a {
     text-decoration: none;
     color: gray;
 
@@ -106,6 +110,7 @@ h2 {
     width: 30px;
     height: 30px;
     background-color: gray;
+    margin-right: 10px;
 
 }
 .black {
@@ -160,6 +165,52 @@ h2 {
 }
 
 /* /nav */
+
+/* @media query */
+@media screen and (max-width: 600px) {
+    #small-logo {
+        
+        display: block;
+        width: 20px;
+    }
+    #full-logo {
+        display: none;
+    }
+    .add-playlist,
+    a>span,    
+    h2 {
+        display: none;
+    }
+    nav {
+        width: 50px;
+    }
+    .nav-footer{
+        width: 49px;
+
+    }
+    .main-overflow {
+        width: calc(100% - 50px);
+    }
+    .app-download {
+        display: flex;
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+        padding-right: 10px;
+    }
+    .user-log {
+        border: 0;
+    }
+
+    .nav-footer,
+    .logo {
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+/* /@media query */
+
 /* .debug nav {
     background-color: aqua;
 } */
