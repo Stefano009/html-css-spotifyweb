@@ -13,6 +13,7 @@ main {
     height: 100%;
 }
 nav {
+    position: relative;
     display: flex;
     width: 200px;
     height: calc(100% - 100px);
@@ -20,6 +21,8 @@ nav {
     justify-content: flex-start;
     align-items: flex-start;
     background-color: black;
+    color: gray;
+
 }
 .main-overflow {
     width: calc(100% - 200px);
@@ -50,7 +53,12 @@ footer {
 .logo>img{
     width: 150px;
 }
-.nav-links>ul {
+.nav-link{
+    height: 150px;
+
+}
+.nav-link>ul,
+.playlist>ul {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -62,6 +70,7 @@ footer {
 
 }
 .user-link>li {
+    font-size: 10px;
     padding: 10px 20px;
 }
 .user-link>li>a>img {
@@ -70,6 +79,86 @@ footer {
     filter: invert(1);
     filter: opacity(0.5);
 }
+.playlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px;
+    height: calc(100% - 220px);
+    width: 100%;
+}
+h2 {
+    color: white;
+    font-size: 15px;
+}
+.add-playlist {
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+    height: 50px;
+    line-height: 30px;
+    width: 100%;
+}
+.btn-playlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+
+}
+.black {
+    color: black;
+}
+.name-list>li {
+    font-size: 10px;
+    padding: 10px 0;
+}
+.nav-footer {
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    
+    width: 200px;
+    font-size: 10px;
+    background-color: black;
+    padding-left: 20px;
+
+}
+.resize-small {
+    width: 10px;
+}
+.resize-medium {
+    width: 20px;
+}
+.app-download {
+    padding-bottom: 10px;
+    line-height: 10px;
+    text-align: center;
+}
+.round-background {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gray;
+}
+.user-log {
+    display: flex;
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+    padding: 20px 0 10px;
+    border-top: 1px solid grey;
+}
+.user-log>h2 {
+    padding-left: 5px;
+}
+
 /* /nav */
 /* .debug nav {
     background-color: aqua;
