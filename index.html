@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -23,6 +26,7 @@
                         <li><a href="#"><img src="img/search.svg" alt="search"> <span>Search</span></a></li>
                         <li><a href=""><img src="img/libreria.svg" alt="library"><span>La tua libreria</span></a></li>
                     </ul>
+
 
                 </div>
                 <div class="playlist">
@@ -65,6 +69,47 @@
             <!-- /sezione principale --> 
             <!-- footer floattante? fixed sotto -->
             <footer class="left">
+                <section class="currently-listening">
+                    <img src="img/sinister.jpeg" alt="Sister album">
+                    <div class="artist-song">
+                        <h2>Sinister</h2>
+                        <a href="#"><p>Brano Nome</p></a>
+                    </div>
+                    <a href="#"><i id="heart" class="far fa-heart"></i></a>
+                    <a href="#"><i id="folder" class="far fa-folder"></i></a>
+                </section>
+                <section class="play-settings">
+                    <section class="play-buttons">
+                        <ul class="nostyle">
+                            <li><a href="#"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#"><i class="fas fa-step-backward"></i></a></li>
+                            <li><a href="#"><i class="far fa-play-circle big"></i></a></li>
+                            <li><a href="#"><i class="fas fa-step-forward"></i></a></li>
+                            <li><a href="#"><i class="fas fa-redo-alt"></i></a></li>
+                        </ul>
+                    </section>
+                    <section class="time-bar">
+                        <div class="time-remaining">
+                            <p>0:25</p>
+                        </div>
+                        <div class="bar">
+                            <div class="white-bar"></div>
+                        </div>
+                        <div class="tim-total">
+                            <p>4:35</p>
+                        </div>
+                    </section>
+                </section>
+                <section class="settings">
+                    <ul class="nostyle">
+                        <li><a href="#"><i class="fas fa-list"></i></a></li>
+                        <li><a href="#"><i class="fas fa-desktop"></i></a></li>
+                        <li><a href="#"><i class="fas fa-volume-up"></i></a></li>
+                    </ul>
+                    <div class="volume-bar">
+                        <div class="actual-volume"></div>
+                    </div>
+                </section>
 
             </footer>
             <!-- /footer  -->

@@ -7,7 +7,9 @@
 main                    {
     width: 100%;
     height: 100vh;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+
 }
 .wrapper {
     width: 100%;
@@ -22,7 +24,6 @@ nav {
     justify-content: flex-start;
     align-items: flex-start;
     background-color: black;
-    color: gray;
     overflow:hidden;
 
 }
@@ -33,6 +34,10 @@ nav {
 footer {
     width: 100%;
     height: 100px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .left {
     float: left;
@@ -169,6 +174,104 @@ h2 {
 
 /* /nav */
 
+
+
+
+
+
+
+/* footer */
+.currently-listening {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+}
+.artist-song {
+    font-size: 10px;
+}
+.currently-listening img {
+    height: 50%;
+    padding-right: 10px;
+}
+#heart {
+    padding: 0 10px 0 30px;
+}
+.play-settings {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.play-buttons {
+    font-size: 20px;
+    width: 100%;
+}
+.big {
+    font-size: 30px;
+}
+.nostyle {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.nostyle>li>a {
+    color:white;
+    padding: 0 15px;
+}
+.bar {
+    display: block;
+    height: 4px;
+    width: 80%;
+    background-color: gray;
+    margin: 0 20px;
+}
+.white-bar {
+    width: 20%;
+    height: 100%;
+    background-color: white;
+
+}
+.settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+.time-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    width: 100%;
+    height: 100%;
+}
+.volume-bar {
+    height: 4px;
+    width: 50%;
+    background-color: gray;
+    margin: 0 20px;
+}
+.actual-volume {
+    width: 20%;
+    height: 100%;
+    background-color: white;
+
+}
+
+
+/* /footer */
+
 /* @media query */
 @media screen and (max-width: 600px) {
     #small-logo {
@@ -226,6 +329,6 @@ h2 {
 .debug .main-overflow {
     background-color: cornflowerblue;
 }
-.debug footer {
+/* .debug footer {
     background-color: orange;
-}
+} */
