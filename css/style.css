@@ -12,6 +12,11 @@ main {
     color: gray;  
 
 }
+svg {
+    height: 20px;
+    margin: 0 5px;
+    fill: gray;
+}
 .wrapper {
     width: 100%;
     height: 100%;
@@ -54,14 +59,9 @@ footer {
 
 /* /common */
 /* nav */
-.left-border {
-    border-left: 2px solid lightgreen;
-}
-.left-border>a>img{
-    display: inline-block;
-    width: 20px;
-}
-.left-border>a>span {
+
+
+.white>a>span {
     color: white;
 }
 .logo{
@@ -141,7 +141,7 @@ h2 {
 .playlist h2 {
     padding-left: 20px;
 }
-.add-playlist {
+.add-playlist>a {
     display: flex;
     text-align: center;
     padding-left: 20px;
@@ -151,6 +151,8 @@ h2 {
     width: 100%;
 }
 .btn-playlist {
+    position: absolute;
+    z-index: 500;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,7 +160,17 @@ h2 {
     height: 30px;
     background-color: gray;
     margin-right: 10px;
-
+}
+.btn-playlist-white {
+    display: flex;
+    position: relative;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    margin-right: 10px;
 }
 .black {
     color: black;
@@ -285,25 +297,37 @@ hr {
     height: 100%;
     width: 100%;
 }
-.img-square-none {
+.relative {
     position: relative; 
-    width: 100%;
+}
+.absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.img-square {
+    position: relative;     
     height: 100%;
-    z-index: 0;
+    width: 100%;
+}
+.album .none  {
+    display: none;
 }
 .overlay-play {
     position: absolute;
-    display: none;
+    /* display: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 0%;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
+    z-index: 5;
 }
 .overlay-play i {
-    font-size: 140px;
-    padding: 50px ;
+    font-size: 8em;
     color: white;
 }
 
@@ -424,18 +448,23 @@ hr {
 /* /footer */
 /* hover */
 a:hover,
-.row-nav .nostyle li a:hover {
+.row-nav.nostyle li>a:hover
+a>.flex-nav:hover {
     color: white;
 }
-.overlay-nav-library:hover,
-.overlay-nav-search:hover {
+.left-border:hover {
+    border-left: 4px solid lightgreen;
+}
+.btn-playlist:hover {
     display: none;
 }
-.overlay-play:hover  {
-    display: block;
+
+.album:hover .hover{
+    display: none;
 }
-
-
+.album:hover .none{
+    display: inline-block;
+}
 
 /* /hover  */
 
