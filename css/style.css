@@ -238,11 +238,11 @@ h2 {
 .row-nav>.nostyle {
     text-transform: uppercase;
 }
-.row-nav>.nostyle>li>a,
+/* .row-nav>.nostyle>li>a, */
 .hr-li {
     font-size: 12px;
     font-weight: 600;
-    padding: 0 5px;
+    padding: 10px 5px;
     color: gray;
 }
 hr {
@@ -338,7 +338,7 @@ hr {
     display: flex;
     flex-direction: row;
     height: 100%;
-    width: 30%;
+    width: 230px;
     align-items: center;
     justify-content: flex-start;
     margin-left: 20px;
@@ -363,7 +363,7 @@ hr {
     padding-right: 10px;
 }
 .play-settings {
-    width: 35%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -410,7 +410,7 @@ hr {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    width: 30%;
+    width: 230px;
     height: 100%;
 }
 .time-bar {
@@ -443,12 +443,22 @@ hr {
     background-color: white;
 
 }
+.scroll-ball {
+    position: absolute;
+    display: none;
+    top: -3px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+
+}
 
 
 /* /footer */
 /* hover */
 a:hover,
-.row-nav.nostyle li>a:hover
 a>.flex-nav:hover {
     color: white;
 }
@@ -465,7 +475,17 @@ a>.flex-nav:hover {
 .album:hover .none{
     display: inline-block;
 }
-
+.white-bar:hover,
+.actual-volume:hover  {
+    background-color: greenyellow;
+}
+.white-bar:hover .scroll-ball,
+.actual-volume:hover .scroll-ball {
+    display: block;
+}
+.play-buttons:hover .big{
+    font-size: 25px;
+}
 /* /hover  */
 
 /* @media query */
