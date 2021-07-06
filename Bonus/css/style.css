@@ -458,10 +458,6 @@ hr {
 
 /* /footer */
 /* hover */
-a:link {
-    color: gray;
-}
-
 a:hover,
 a:active,
 a:focus,
@@ -556,14 +552,11 @@ button:hover {
         width: calc(1400px / 6);
     }
 }
-
-/* @media screen and (max-height: 600px) {
-
+@media  all and (max-height: 600px) {
     .overlay-top {
         display: none;
-    }    
-} */
-
+    }
+}
 /* /@media query */
 
 /* .debug nav {
