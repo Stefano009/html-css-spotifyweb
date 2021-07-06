@@ -34,7 +34,7 @@ nav {
 
 }
 .main-overflow {
-    width: calc(100% - 200px);
+    width: calc(100% - 220px);
     height: calc(100% - 100px);
     padding-top: 60px;
     background-color: #141922;
@@ -55,6 +55,10 @@ footer {
     content: "";
     display: table;
     clear: both;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
 }
 /* /common */
 /* overlay-top */
@@ -204,7 +208,7 @@ h2 {
     width: 20px;
 }
 .app-download {
-    padding-bottom: 10px;
+    padding: 10px 0;
     line-height: 10px;
     text-align: center;
 }
