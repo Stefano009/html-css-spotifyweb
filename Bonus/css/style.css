@@ -60,6 +60,26 @@ footer {
     display: flex;
     flex-wrap: wrap;
 }
+.overlay-animation {
+    position: absolute;
+    /* display: none; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 0%;
+    width: 0%;
+    background-color: rgba(0, 0, 0, 0.5 );
+    z-index: 9999;
+}
+
+.flex-circle {
+    display: flex;
+    font-size: 0px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
 /* /common */
 /* overlay-top */
 .overlay-top {
@@ -80,6 +100,7 @@ button {
     color: white;
     border: 1px white solid;
 }
+
 /* /overlay-top */
 /* nav */
 
@@ -319,7 +340,7 @@ hr {
 }
 .overlay-play {
     position: absolute;
-    /* display: none; */
+    display: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -461,9 +482,43 @@ hr {
 
 
 /* /footer */
+/* animation */
+.animation-loading {
+    animation:right-spin 5s linear;
+    animation-iteration-count: 1;
+}
+@keyframes right-spin {
+    0% {
+        transform: rotate(0);
+        font-size: 100px;
+    }
+    50% {
+        transform: rotate(180deg);
+        font-size: 50px;
+    }
+    100% {
+        transform: rotate(360deg);
+        font-size: 0px;
+    }
+}
+.overlay-animation {
+    animation: dimesion 5s;
+}
+@keyframes dimesion {
+    0%{
+        height: 100%;
+        width: 100%;
+    }
+    100% {
+        height: 0%;
+        width: 0%;
+    }
+}
+
+/* /animation */
 /* hover */
 a:hover,
-a:active,
+/* a:active, */
 a:focus,
 a>.flex-nav:hover {
     color: white;
